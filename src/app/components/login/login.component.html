@@ -1,3 +1,36 @@
-<p>
-  login works!
-</p>
+<div class="container">
+
+    <body>
+
+        <div id="login">
+
+            <section>
+                <article>
+                    <h2>Cinema Carmat</h2>
+
+                    <p>Si no haces parte de nuestra empresa puedes registrate cuando quieras</p>
+
+                    <p><input type="email"
+                               id="email"
+                               placeholder="Correo electronico"
+                               onBlur="if(this.value=='')this.value='Correo electronico'"
+                               onFocus="if(this.value=='Correo electronico')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+
+                    <p><input type="password"
+                               id="password"
+                               placeholder="Contraseña"
+                               onBlur="if(this.value=='')this.value='password'"
+                               onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+                    <button>
+                        Entrar
+                    </button>
+                </article>
+            </section>
+
+        </div> <!-- end login -->
+
+    </body>
+
+</div>
