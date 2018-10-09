@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.mat-radio-label-content {
+    color: #ffffff;
+}
+
+.mat-radio-outer-circle{
+    border-color: #B5121C;
+}
+
+.mat-radio-inner-circle{
+    background-color: #B5121C;
 }

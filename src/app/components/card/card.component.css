@@ -1,0 +1,69 @@
+.cardContainer{
+    margin: 0 10px;
+    width: 230px;
+    height: 346px;
+    position: relative;
+
+}
+
+.cardContainer h3, .cardContainer h4{
+    text-align: center;
+    padding: 4px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #B5121C;
+}
+
+.cardContainer img{
+    width: 100%;
+    position: absolute;
+}
+
+.description{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.description:hover {
+    transition: 300ms;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.description:hover > div span{
+    border: 3px solid #fff;
+}
+
+.description:hover > h4{
+    display: initial;
+}
+
+.description div{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description div span {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    border-radius: 100%;
+    padding: 5px 0px 0px 3px;
+}
+
+.cardContainer h4{
+    width: 100%;
+    font-size: 0.8em;
+    display: none;
+}
