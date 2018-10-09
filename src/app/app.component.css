@@ -1,0 +1,35 @@
+header{
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #ECECEC;
+}
+
+#container{
+    max-width: 100vw;
+}
+
+.social img{
+    width: 31.5px;
+    height: 31.5px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.actions button{
+    width: 120px;
+    padding: 6px 10px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+#btnRegister{
+    background-color: #545454;
+}
+
+#btnLogin{
+    background-color: #B5121C;
+}
