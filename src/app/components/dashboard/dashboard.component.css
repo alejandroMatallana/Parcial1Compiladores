@@ -14,6 +14,7 @@
     margin: 5px;
     flex-grow: 1;
     min-width: 154px;
+    text-align: center;
 }
   
 .example-selected-value {
@@ -23,7 +24,9 @@
 .dashboardContainer{
     margin: 0 auto;
     width: 90vw;
+    min-width: 278px; 
     max-width: 1200px;
+    min-height: 75vh;
     display: flex;
     flex-flow: column wrap;
 }
@@ -47,16 +50,8 @@ app-card{
     min-width: 238px;
 }
 
-@media (max-width: 948px){
-    .dashboardContainer{
-        flex-flow: column nowrap;
-    }
-
-    .categories, .movies{
-        width: 100%;
-    }
-
-    .categories {
-        min-height: 15vh;
+@media screen and (max-width: 773px){
+    .radio-button {
+        text-align: left;
     }
 }

@@ -23,9 +23,18 @@
     </div>
     <div>
       <h3>Fecha de Nacimiento</h3>
-      <select class="birthdate"></select>
-      <select class="birthdate"></select>
-      <select class="birthdate"></select>
+      <select class="birthdate">
+        <option>Día</option>
+        <option *ngFor="let day of days" [value]="day">{{day}}</option>
+      </select>
+      <select class="birthdate">
+        <option>Mes</option>
+        <option *ngFor="let month of months" [value]="month">{{month}}</option>
+      </select>
+      <select class="birthdate">
+        <option>Año</option>
+        <option *ngFor="let year of years" [value]="year">{{year}}</option>
+      </select>
     </div>
     <div>
       <h3>Celular</h3>
