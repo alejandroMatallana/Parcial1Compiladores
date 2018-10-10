@@ -1,0 +1,13 @@
+.social img {
+    width: 31.5px;
+    height: 40;
+    border-radius: 50%;
+    margin: 2% 2%;
+    background-color: #ececec;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: auto;
+}

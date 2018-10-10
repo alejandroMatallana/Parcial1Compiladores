@@ -1,3 +1,17 @@
-<p>
-  dashboard works!
-</p>
+<div class="dashboardContainer">
+  <div class="categories">
+    <h3>Categories</h3>
+    <mat-radio-group class="radio-group" [(ngModel)]="categoryChoosen">
+      <mat-radio-button class="radio-button" *ngFor="let item of categories" [value]="item">
+            {{item.categoryName}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="movies">
+      <app-card *ngFor="let movie of movies" 
+      [title]="movie.title" 
+      [imageSrc]="movie.imageSrc" 
+      [category]="movie.category" 
+      [year]="movie.year"></app-card>
+  </div>
+</div>

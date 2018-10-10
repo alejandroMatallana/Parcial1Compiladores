@@ -1,0 +1,64 @@
+.categories h3{
+    margin: 5px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    flex-flow: column nowrap;
+}
+  
+.radio-button {
+    margin: 5px;
+    flex-grow: 1;
+    min-width: 154px;
+}
+  
+.example-selected-value {
+    margin: 15px 0;
+}
+
+.dashboardContainer{
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.categories{
+    padding: 20px;
+    width: 20%;
+    background-color: #333333;
+    min-height: 100vh;
+}
+
+.movies{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+app-card{
+    height: 346px;
+    margin: 0 5px 1.1em 5px;
+}
+
+@media (max-width: 948px){
+    .dashboardContainer{
+        flex-flow: column nowrap;
+    }
+
+    .categories, .movies{
+        width: 100%;
+    }
+
+    .categories {
+        min-height: 15vh;
+    }
+
+    .radio-group{
+        flex-flow: row wrap;
+    }
+}
