@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
   allCategories: string;
   cienciaFiccionCategory: string;
   movies: Array<{title: string, imageSrc: string, category: string, year: number}>;
+  moviesFilter: Array<{title: string, imageSrc: string, category: string, year: number}>;
 
   constructor() { }
 
@@ -27,6 +28,7 @@ export class DashboardComponent implements OnInit {
     this.terrorCategory = 'Terror';
     this.cienciaFiccionCategory = 'Ciencia Ficcion';
     this.allCategories = 'Todas';
+    this.categoryChoosen = this.allCategories;
     this.categories = [
       {categoryName: this.allCategories},
       { categoryName: this.accionCategory},
@@ -46,6 +48,16 @@ export class DashboardComponent implements OnInit {
       {title: 'La Monja', imageSrc: 'https://cinemarkmedia.modyocdn.com/co/300x400/185656.jpg?version=1539108000000', 
       category: this.terrorCategory, year: 2018}
     ];
+
+    this.moviesFilter = this.movies;
+  }
+
+  filter(category: string): void{
+    if(category == this.allCategories){
+      this.moviesFilter = this.movies;
+    } else {
+      this.moviesFilter = this.movies.filter(movie => movie.category == category);
+    }
   }
 
 }

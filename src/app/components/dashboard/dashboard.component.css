@@ -35,6 +35,8 @@
     flex: 1 1 100%;
     padding: 20px;
     background-color: #333333;
+    height: 20vh;
+    max-height: 20vh;
 }
 
 .movies{
