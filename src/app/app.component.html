@@ -6,8 +6,8 @@
         </div>
         <div class="actions">
             <a routerLink="/hellopage">Cinema Carmat</a>
-            <button routerLink="/register" id="btnRegister">Registrarse</button>
-            <button routerLink="/login" id="btnLogin">Iniciar Sesión</button>
+            <button routerLink="/register" id="btnRegister" *ngIf="isNotDashboardActivated | async">Registrarse</button>
+            <button routerLink="/login" id="btnLogin" *ngIf="isNotDashboardActivated | async">Iniciar Sesión</button>
         </div>
     </header>
     <router-outlet></router-outlet>

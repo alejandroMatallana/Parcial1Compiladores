@@ -1,5 +1,6 @@
 .containerFooter h1 {
     color: #b5121b;
+    font-family: 'Charmonman', cursive;
 }
 
 footer {
@@ -12,7 +13,10 @@ footer {
 }
 
 .containerFooter {
-    width: 100%;
+    background-color: #DDDDDD;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1200px;
     display: flex;
     /* flex-direction: row;
 	flex-wrap: wrap; */
@@ -45,7 +49,7 @@ h4 {
 }
 
 .etiqueta p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 @media (max-width: 800px) {

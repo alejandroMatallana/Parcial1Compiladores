@@ -1,9 +1,8 @@
 .cardContainer{
-    margin: 0 10px;
+    margin: 5px auto;
     width: 230px;
     height: 346px;
     position: relative;
-
 }
 
 .cardContainer h3, .cardContainer h4{
@@ -12,6 +11,10 @@
     font-size: 1.5em;
     color: #ffffff;
     background-color: #B5121C;
+}
+
+.cardContainer h3{
+    font-family: 'Lobster', cursive;
 }
 
 .cardContainer img{
@@ -65,5 +68,6 @@
 .cardContainer h4{
     width: 100%;
     font-size: 0.8em;
+    font-family: 'Oswald', sans-serif;
     display: none;
 }

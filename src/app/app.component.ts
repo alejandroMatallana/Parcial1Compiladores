@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  private _isNotDashboardActivated: Observable<boolean>;
   images: Array<{src: string, name: string}>;
 
   constructor(private router: Router){
@@ -18,5 +21,10 @@ export class AppComponent {
       {src: 'https://cinemarkla.modyocdn.com/uploads/8109e80b-4302-484d-8877-e935545bf653/original/ico-instagram.png', 
       name: 'Instagram'}
     ];
+  }
+
+  get isNotDashboardActivated(): Observable<boolean>{
+    let isDashboard: boolean = this.router.isActive('dashboard',false);
+    return Observable.of(!isDashboard);
   }
 }

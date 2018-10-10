@@ -1,12 +1,13 @@
 .categories h3{
-    margin: 5px 0;
+    margin: 5px 0 20px 0;
     color: #ffffff;
     text-align: center;
+    font-size: 1.7em;
 }
 
 .radio-group {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
 }
   
 .radio-button {
@@ -24,25 +25,26 @@
     width: 90vw;
     max-width: 1200px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .categories{
+    flex: 1 1 100%;
     padding: 20px;
-    width: 20%;
     background-color: #333333;
-    min-height: 100vh;
 }
 
 .movies{
-    width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    flex: 1 1 100%;
     display: flex;
     flex-flow: row wrap;
 }
 
 app-card{
-    height: 346px;
-    margin: 0 5px 1.1em 5px;
+    flex-grow: 1;
+    min-width: 238px;
 }
 
 @media (max-width: 948px){
@@ -56,9 +58,5 @@ app-card{
 
     .categories {
         min-height: 15vh;
-    }
-
-    .radio-group{
-        flex-flow: row wrap;
     }
 }
