@@ -7,9 +7,6 @@
 }
 
 .container {
-    margin: 0 auto;
     display: grid;
-    width: 90vw;
-    max-width: 1200px;
     height: auto;
 }

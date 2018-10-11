@@ -23,9 +23,7 @@
 
 .dashboardContainer{
     margin: 0 auto;
-    width: 90vw;
-    min-width: 278px; 
-    max-width: 1200px;
+    width: 100%;
     min-height: 75vh;
     display: flex;
     flex-flow: column wrap;
@@ -35,8 +33,7 @@
     flex: 1 1 100%;
     padding: 20px;
     background-color: #333333;
-    height: 20vh;
-    max-height: 20vh;
+    height: auto;
 }
 
 .movies{
@@ -55,5 +52,9 @@ app-card{
 @media screen and (max-width: 773px){
     .radio-button {
         text-align: left;
+    }
+
+    .movies{
+        padding: 5px;
     }
 }

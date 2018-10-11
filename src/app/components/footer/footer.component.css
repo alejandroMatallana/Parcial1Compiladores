@@ -14,10 +14,6 @@ footer {
 
 .containerFooter {
     background-color: #DDDDDD;
-    margin: 0 auto;
-    width: 90vw;
-    min-width: 278px;
-    max-width: 1200px;
     display: flex;
     /* flex-direction: row;
 	flex-wrap: wrap; */

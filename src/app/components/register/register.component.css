@@ -23,9 +23,7 @@
 .registerContainer{
     background-color: #ffffff;
     margin: 0 auto;
-    width: 90vw;
-    min-width: 278px;
-    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
 }
