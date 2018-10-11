@@ -12,6 +12,7 @@ section {
     justify-content: space-around;
     padding: 1.5em 0;
     width: 100vw;
+
 }
 
 section article {
@@ -59,4 +60,22 @@ section article p {
     color: rgb(110, 105, 105);
     font-size: 3vh;
     height: 8vh;
+}
+
+@media (max-width: 873px) {
+    section article {
+        width: 150%;
+        height: auto;
+    }
+
+    section article p {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+
+
+
+
+
 }

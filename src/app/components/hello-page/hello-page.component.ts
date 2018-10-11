@@ -41,13 +41,16 @@ export class HelloPageComponent implements OnInit {
 			clickAction: () => alert('custom click function')
 		},
 		{
-			url:
-				'https://s3-eu-west-1.amazonaws.com/disasterdraw.blindcat/destacados/000/001/369/original/venom.jpg?1538699723',
-			caption: 'Apple TV',
+			url: 'http://www.movienewsletters.net/media/slider/1200x444/247729.jpg',
+
 			href: 'https://www.apple.com/'
 		},
 		'https://i.ytimg.com/vi/RYQmtI-uz38/maxresdefault.jpg',
-		{ url: 'assets/kitties.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
+		{
+			url: 'http://www.cinesalbatrosbabel.com/upload/slider/8bca32.jpg',
+			backgroundSize: 'contain',
+			backgroundPosition: 'center'
+		}
 	];
 	height = '400px';
 	minHeight: string;
