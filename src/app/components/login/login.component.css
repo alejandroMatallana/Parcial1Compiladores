@@ -1,21 +1,26 @@
-.container {
-    display: grid;
-    grid-template-rows: 10vh auto 10vh;
-    width: 100vw;
+.containerLogin {
+    width: 100%;
+    height: 85vh;
 }
 
-section {
+/* section {
     background-color: #f7f7f7;
     display: grid;
-    grid-template: auto/ repeat(4, 22vw);
+    grid-template: auto/ repeat(4, 22%);
     grid-gap: 2em 0;
     justify-content: space-around;
     padding: 1.5em 0;
-    width: 100vw;
+} */
 
+.containerLogin section {
+    background-color: #f7f7f7;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-section article {
+/* section article {
     background-color: white;
     border-radius: 3px;
     color: #303032;
@@ -26,9 +31,20 @@ section article {
     justify-content: space-around;
     width: 150%;
     margin: 30% 0% 0% 135%;
+} */
+
+.containerLogin section article {
+    background-color: white;
+    border-radius: 3px;
+    color: #303032;
+    width: 464px;
+    height: 336px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px #b8b8b8;
+    justify-content: space-around;
 }
 
-h2 {
+/* h2 {
     margin: 0% 3% 0% 0%;
     color: rgb(177, 40, 40);
     font-size: 2em;
@@ -36,16 +52,33 @@ h2 {
     font-family: Georgia;
     text-align: center;
 
+} */
+
+h2 {
+    margin-top: 15px;
+    color: rgb(177, 40, 40);
+    font-size: 2em;
+    font-family: Georgia;
+    text-align: center;
 }
 
-input {
+/* input {
     width: 90%;
     border-radius: 4px;
     height: 6vh;
     font-size: 2.5vh;
+} */
+
+.campo input {
+    padding-left: 5px;
+    width: 90%;
+    border-radius: 4px;
+    height: 39px;
+    font-size: 16px;
+    border: 0.5px solid rgb(196, 195, 195);
 }
 
-button {
+/* button {
     background-color: rgb(236, 17, 17);
     color: white;
     width: 90%;
@@ -53,23 +86,52 @@ button {
     border-radius: 3px;
     font-family: Georgia;
     font-size: 3vh;
+} */
+
+button {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: rgb(236, 17, 17);
+    color: white;
+    width: 90%;
+    border-radius: 3px;
+    font-family: Georgia;
+    font-size: 20px;
 }
 
-section article p {
+/* .containerLogin section article p {
     font-family: Georgia;
     color: rgb(110, 105, 105);
     font-size: 3vh;
     height: 8vh;
+} */
+
+.containerLogin section article p {
+    margin: 10px 0;
+    font-family: Georgia;
+    color: rgb(110, 105, 105);
+    font-size: 20px;
 }
 
-@media (max-width: 873px) {
-    section article {
+@media (max-width: 461px){
+    .containerLogin section {
+        align-items: flex-start;
+    }
+
+    .containerLogin section article{
+        padding-top: 40px;
+        box-shadow: none;
+    }
+}
+
+/* @media (max-width: 873px) {
+    .containerLogin section article {
         width: 150%;
         height: auto;
 
     }
 
-    section article p {
+    .containerLogin section article p {
         width: 100%;
         margin: 15px 0;
     }
@@ -106,4 +168,5 @@ section article p {
     }
 
 
-}
+} */
+
