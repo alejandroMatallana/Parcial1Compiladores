@@ -1,7 +1,7 @@
-.containerLogin {
+.container {
     display: grid;
     grid-template-rows: 10vh auto 10vh;
-    width: 100%;
+    width: 100vw;
 }
 
 section {
@@ -66,6 +66,7 @@ section article p {
     section article {
         width: 150%;
         height: auto;
+
     }
 
     section article p {
@@ -73,9 +74,36 @@ section article p {
         margin: 15px 0;
     }
 
+}
+
+@media (max-width: 540px) {
 
 
+    .comentario {
+        padding: 0% 0% 0% 10%;
+    }
 
+    .campo {
+
+
+        padding: 10% 0;
+    }
+
+
+}
+
+
+@media (max-width: 413px) {
+
+
+    .comentario {
+        padding: -100% 0% 0% 1%;
+        height: 10%;
+    }
+
+    .campo {
+        padding: 10% 0%;
+    }
 
 
 }
